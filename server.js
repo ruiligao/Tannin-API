@@ -28,14 +28,12 @@ app.post('/',(req,res)=>{
     )
 )})
 
-app.delete('/:_id'),(req,res)=>{
-    db.MasterWineList.findById(req.params.id)
+app.delete('/:_id',(req,res)=>{
+    db.MasterWineList.findById(req.params._id)
       .then(dbWine => dbWine.remove())
       .then(dbWine => res.json(dbWine))
       //if error, catch it and give a 422 response as well as logging the error in the console
       .catch(err => res.status(422).json(err));
-        })
-    )
-}
+})
 
 app.listen(PORT)
