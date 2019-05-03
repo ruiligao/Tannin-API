@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const db = require('./models');
-const PORT = process.env.PORT || 3000;
+const wineRoutes = require('./routes/api/Wine')
+const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/wines"
 
@@ -35,5 +36,7 @@ app.delete('/:_id',(req,res)=>{
       //if error, catch it and give a 422 response as well as logging the error in the console
       .catch(err => res.status(422).json(err));
 })
+
+app.use('/api/wine', wineRoutes)
 
 app.listen(PORT)
