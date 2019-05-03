@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
+var cors = require('cors');
 const db = require('./models');
 const wineRoutes = require('./routes/api/Wine')
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/wines"
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
