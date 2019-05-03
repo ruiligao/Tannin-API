@@ -14,14 +14,13 @@ router.route("/wineseed")
         db.MasterWineList.remove({})
         .then(() => db.MasterWineList.collection.insertMany(wineSeed))
         .then(data => {
-        // console.log(data.results + " records inserted!");
-        // process.exit(0);
         res.send('Wine successfully Seeded!')
     })
     .catch(err => {
         console.error(err);
     });
-    })
+});
+
     router.route("/:id")
     .get(wineController.findById)
     .put(wineController.update)
