@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const db = require('./models');
 const wineRoutes = require('./routes/api/Wine')
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/wines"
 
