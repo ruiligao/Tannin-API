@@ -4,7 +4,7 @@ const router = require("express").Router();
 // const googleRoutes = require("./google");
 const wineRoutes = require("./Wine");
 const restaurantRoutes = require("./Restaurants");
-const restaurantRoutes = require("./Employees");
+const employeesRoutes = require("./Employees");
 //naming the routes; using the books.js and google.js routes file
 
 //the API.js will hit these routes once activitated by client/ user

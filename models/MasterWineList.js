@@ -65,7 +65,7 @@ var MasterWineListSchema = new Schema({
     history: {
         type: String
     },
-    wineId: { type: String, required: true, unique: true }
+
 });
 
 var MasterWineList = mongoose.model("MasterWineList", MasterWineListSchema);
