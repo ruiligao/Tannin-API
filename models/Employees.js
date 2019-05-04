@@ -1,8 +1,9 @@
 // Require mongoose
 
 var mongoose = require('mongoose');
-
 var Schema = mongoose.Schema;
+const bcrypt = require('bcryptjs')
+mongoose.promise = Promise
 
 var EmployeeSchema = new Schema({
     firstName: {
@@ -15,12 +16,31 @@ var EmployeeSchema = new Schema({
         type: String
     },
     isAdmin: {
-        type: Array
+        type: Boolean
     },
     password: {
         type: String
     }
 });
+
+EmployeeSchema.methods = {
+	checkPassword: function(inputPassword) {
+		return bcrypt.compareSync(inputPassword, this.local.password)
+	},
+	hashPassword: plainTextPassword => {
+		return bcrypt.hashSync(plainTextPassword, 10)
+	}
+}
+EmployeeSchema.pre('save', function(next) {
+	if (!this.password) {
+		console.log('=======NO PASSWORD PROVIDED=======')
+		next()
+	} else {
+		this.password = this.hashPassword(this.password)
+		next()
+	}
+})
+
 
 var Employees = mongoose.model("Employees", EmployeeSchema);
 
