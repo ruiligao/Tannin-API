@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const userController = require("../../controllers/userController");
-const passport = require('../../passport')
+const passport = require('../../passport');
+const db = require("../../models");
 
 router.route("/signup")
 	.post(userController.signup);
@@ -12,32 +13,46 @@ router.route("/signup")
 //   });
 // router.route("/login") 
 // .post(passport.authenticate('local'), userController.login);
-router.post(
-	'/login',
-	function (req, res, next) {
-		console.log('================');
-		console.log(req.body);
-		console.log('================');
-		next();
-	},
-	passport.authenticate('local'),(req, res) => {
-		console.log("KKKK");
+// router.post('/login',(req,res) =>{
+// 	console.log("LOGIN");
+// 	console.log(req.body);
+// 	db.Employees.findOne({email:req.body.email}).then((user)=>{
+// if(user.password===req.body.password){
+// 	res.json(user);
+// }
+// else {
+// 	res.json("No User")
+// }
+// 	})
+// })
+	router.post('/login',passport.authenticate('local'),
+(req, res) => {
+	console.log("???????????????");
+	console.log(user);
+	console.log("???????????????");
+
 		console.log(req);
 		console.log(res);
-
 		const user = JSON.parse(JSON.stringify(req.user)); // hack
 		const cleanUser = Object.assign({}, user);
 		if (cleanUser) {
 			console.log(`Deleting ${cleanUser.password}`);
 			delete cleanUser.password;
 			console.log(cleanUser);
+			console.log("KKKK");
+			console.log(res.user);
+		res.json({ user});
+		console.log("KKKK1");
 		}
-		res.json({ user: cleanUser })
+	})
+		// res.end("hello world\n");
+		// }
+	
+		
 		// successRedirect: '/',
 		// failureRedirect: '/login',
-		// //  failureFlash: true,
-	}
-)
+		//  failureFlash: true,
+
 
 router.route("/logout")
 	.post(userController.logout);

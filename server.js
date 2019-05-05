@@ -26,15 +26,15 @@ app.use(
         saveUninitialized: false
     })
 )
-app.use(passport.initialize())
-app.use(passport.session())
+app.use(passport.initialize());
+app.use(passport.session());
 
 if (process.env.NODE_ENV === 'production') {
-    const path = require('path')
+    const path = require('path');
     // console.log('YOU ARE IN THE PRODUCTION ENV')
-    app.use('/static', express.static(path.join(__dirname, '../build/static')))
+    app.use('/static', express.static(path.join(__dirname, '../build/static')));
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '../build/'))
+        res.sendFile(path.join(__dirname, '../build/'));
     })
 }
 // app.get('/',(req,res)=>(
@@ -63,11 +63,11 @@ if (process.env.NODE_ENV === 'production') {
 //       .catch(err => res.status(422).json(err));
 // })
 
-app.use(routes)
+app.use(routes);
 // app.use(function (err, req, res, next) {
 //     console.log('====== ERROR =======')
 //     console.error(err.stack)
 //     res.status(500)
 // })
 
-app.listen(PORT)
+app.listen(PORT);
