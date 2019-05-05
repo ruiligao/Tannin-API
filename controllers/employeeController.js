@@ -1,9 +1,11 @@
 const db = require("../models");
 
+//change MasterWineList to Employees to access models Employees collection
+
 module.exports = {
     findAll: function(req, res) {
-        db.MasterWineList.find()
-          .then(dbWine => res.json(dbWine))
+        db.Employees.find()
+          .then(dbEmp => res.json(dbEmp))
           .catch(err => res.status(422).json(err));
     },
 
