@@ -5,6 +5,29 @@ const db = require("../../models");
 
 router.route("/signup")
 	.post(userController.signup);
+// router.route("/login")
+// 	.post(userController.login);
+router.post('/login', (req, res)=>{
+	console.log(req.body.email)
+	db.Employees.findOne({email:req.body.email}).then((user)=>{
+		console.log(res);
+		if(user!==null) {
+							res.json(user)
+			}
+			else {
+				res.json("Sorry,this email is not found, please try another email")
+			}
+		})
+	})
+
+		// if(user.password===req.body.password){
+		// 	res.json(user);
+		// }
+		// else {
+		// 	res.json("No User")
+		// }
+		// 	})
+		// })
 // router.post('/login', 
 //   passport.authenticate('local', { failureRedirect: '/login' }),
 //   function(req, res) {
@@ -25,26 +48,26 @@ router.route("/signup")
 // }
 // 	})
 // })
-	router.post('/login',passport.authenticate('local'),
-(req, res) => {
-	console.log("???????????????");
-	console.log(user);
-	console.log("???????????????");
+// 	router.post('/login',passport.authenticate('local'),
+// (req, res) => {
+// 	console.log("???????????????");
+// 	console.log(user);
+// 	console.log("???????????????");
 
-		console.log(req);
-		console.log(res);
-		const user = JSON.parse(JSON.stringify(req.user)); // hack
-		const cleanUser = Object.assign({}, user);
-		if (cleanUser) {
-			console.log(`Deleting ${cleanUser.password}`);
-			delete cleanUser.password;
-			console.log(cleanUser);
-			console.log("KKKK");
-			console.log(res.user);
-		res.json({ user});
-		console.log("KKKK1");
-		}
-	})
+// 		console.log(req);
+// 		console.log(res);
+// 		const user = JSON.parse(JSON.stringify(req.user)); // hack
+// 		const cleanUser = Object.assign({}, user);
+// 		if (cleanUser) {
+// 			console.log(`Deleting ${cleanUser.password}`);
+// 			delete cleanUser.password;
+// 			console.log(cleanUser);
+// 			console.log("KKKK");
+// 			console.log(res.user);
+// 		res.json({ user});
+// 		console.log("KKKK1");
+// 		}
+// 	})
 		// res.end("hello world\n");
 		// }
 	
