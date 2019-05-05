@@ -1,22 +1,23 @@
 const express = require('express')
 const router = express.Router()
-const User = require('../models/Employees')
-const Admin = require('../models/Restaurants')
+const Employee = require('../models/Employees')
+const Restaurant = require('../models/Restaurants')
 const passport = require('../passport')
 const db = require("../models");
 
 module.exports = {
-	// getUser: function (req, res, next) {
-	// 	console.log('===== user!!======')
-	// 	console.log(req.user)
-	// 	if (req.user) {
-	// 		return res.json({ user: req.user })
-	// 	} else {
-	// 		return res.json({ user: null })
-	// 	}
-	// },
+	getUser: function (req, res, next) {
+		console.log('===== user!!======')
+		console.log(req.user)
+		if (req.user) {
+			return res.json({ user: req.user })
+		} else {
+			return res.json({ user: null })
+		}
+	},
 	login: function (req, res) {
 		console.log('POST to /login')
+		console.log(req.boy);
 		const user = JSON.parse(JSON.stringify(req.user)) // hack
 		const cleanUser = Object.assign({}, user)
 		if (cleanUser) {
@@ -26,6 +27,7 @@ module.exports = {
 		res.json({ user: cleanUser })
 	},
 	logout: function (req, res) {
+		console.log(req.user)
 		if (req.user) {
 			req.session.destroy()
 			res.clearCookie('connect.sid') // clean up!
@@ -44,30 +46,24 @@ module.exports = {
 					error: `Sorry, already a user with the email: ${email}`
 				})
 			}
-			const newAdmin = new Admin({
-				restaurant: restaurant,
-				firstName: firstName,
-				lastName: lastName,
-				email: email,
-				password: password
-			})
-			newAdmin.save((err, savedAdmin) => {
-				if (err) return res.json(err)
-				return res.json(savedAdmin)
-			})
-
-			const newUser = new User({
-
-				firstName: firstName,
-				lastName: lastName,
-				email: email,
-				password: password,
-				isAdmin: true
-			})
-			newUser.save((err, saveUser) => {
-				if (err) return res.json(err)
-				return res.json(savedUser)
-			})
+			else {
+				const newRestaurant = new Restaurant({
+					name: restaurant,
+					email: email,
+				})
+				newRestaurant.save((err, saveRestaurant) => {
+					if (err) return res.json(err)
+					return res.json(saveRestaurant)
+				})
+				db.Employees.create({
+					firstName: firstName,
+					lastName: lastName,
+					email: email,
+					password: password,
+					isAdmin: true
+				}).then(newEmployee => res.json(newEmployee))
+					.catch(err => res.status(422).json(err));
+			}
 		})
 	}
 }

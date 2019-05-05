@@ -24,21 +24,21 @@ var EmployeeSchema = new Schema({
 });
 
 EmployeeSchema.methods = {
-	checkPassword: function(inputPassword) {
-		return bcrypt.compareSync(inputPassword, this.local.password)
-	},
-	hashPassword: plainTextPassword => {
-		return bcrypt.hashSync(plainTextPassword, 10)
-	}
+    checkPassword: function (inputPassword) {
+        return bcrypt.compareSync(inputPassword, this.password)
+    },
+    hashPassword: plainTextPassword => {
+        return bcrypt.hashSync(plainTextPassword, 10)
+    }
 }
-EmployeeSchema.pre('save', function(next) {
-	if (!this.password) {
-		console.log('=======NO PASSWORD PROVIDED=======')
-		next()
-	} else {
-		this.password = this.hashPassword(this.password)
-		next()
-	}
+EmployeeSchema.pre('save', function (next) {
+    if (!this.password) {
+        console.log('=======NO PASSWORD PROVIDED=======')
+        next()
+    } else {
+        this.password = this.hashPassword(this.password)
+        next()
+    }
 })
 
 
