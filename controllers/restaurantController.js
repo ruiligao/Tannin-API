@@ -1,27 +1,38 @@
 const db = require("../models");
 
+//change MasterWineList to Restaurants to access models Restaurants collection
 module.exports = {
     findAll: function(req, res) {
-        db.MasterWineList.find()
-          .then(dbWine => res.json(dbWine))
-          .catch(err => res.status(422).json(err));
-    },
-
-    create: function(req, res) {
-        db.Employees.create(req.body)
-          .then(dbEmp => res.json(dbEmp))
+        db.Restaurants.find()
+          .then(dbResto => res.json(dbResto))
           .catch(err => res.status(422).json(err));
     },
     
+//DMS -- RESTAURANT MODEL
+    create: function(req, res) {
+      db.Restaurants.create(req.body)
+        .then(dbResto => res.json(dbResto))
+        .catch(err => res.status(422).json(err));
+  },
+    //--------------------
+
       findById: function(req, res) {
-        db.Employees.findById(req.params.id)
-          .then(dbEmp => res.json(dbEmp))
+        db.Restaurants.findById(req.params.id)
+          .then(dbResto => res.json(dbResto))
           .catch(err => res.status(422).json(err));
     },
 
     update: function(req, res) {
-        db.Employees.findOneAndUpdate({ id: req.params.id }, req.body)
-          .then(dbEmp => res.json(dbEmp))
+        db.Restaurants.findOneAndUpdate({ id: req.params.id }, req.body)
+          .then(dbResto => res.json(dbResto))
           .catch(err => res.status(422).json(err));
-    }
+    },
+
+    remove: function(req, res) {
+      db.Restaurants.findById(req.params.id)
+        .then(dbResto => dbResto.remove())
+        .then(dbResto => res.json(dbResto))
+        .catch(err => res.status(422).json(err));
+  }
+    
 }

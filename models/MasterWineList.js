@@ -64,7 +64,8 @@ var MasterWineListSchema = new Schema({
     },
     history: {
         type: String
-    }
+    },
+
 });
 
 var MasterWineList = mongoose.model("MasterWineList", MasterWineListSchema);
