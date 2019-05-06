@@ -23,6 +23,8 @@ const strategy = new LocalStrategy(
 			console.log("done");
 			 return done(null, userMatch);
 			// return done(null, userMatch);
+		}).then(function (data) {
+			console.log(data);
 		})
 	}
 )
