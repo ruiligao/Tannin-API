@@ -1,9 +1,19 @@
 const mongoose =require('mongoose');
 const db = require('./models');
+mongoose.Promise = global.Promise
 
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/wines"
 );
+//  db = mongoose.connection
+// db.on('error', err => {
+// 	console.log(`There was an error connecting to the database: ${err}`)
+// })
+// db.once('open', () => {
+// 	console.log(
+// 		`You have successfully connected to your mongo database: ${MONGO_URL}`
+// 	)
+// })
 
 var wineSeed = [
     {
