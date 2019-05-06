@@ -1,6 +1,9 @@
 const db = require("../models");
 
 module.exports = {
+
+
+  
     findAll: function(req, res) {
         db.MasterWineList.find()
           .then(dbWine => res.json(dbWine))
