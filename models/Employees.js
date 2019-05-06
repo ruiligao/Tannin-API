@@ -14,9 +14,6 @@ var EmployeeSchema = new Schema({
     email: {
         type: String
     },
-    isAdmin: {
-        type: Array
-    },
     password: {
         type: String
     }

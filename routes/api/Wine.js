@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const wineController = require("../../controllers/wineControllers");
-const db = require('../../models')
+const db = require('../../models');
 const wineSeed = require('../../Seedin').wineSeed 
 
 //defining our root route or "/"
