@@ -6,7 +6,8 @@ const restaurantSeed = require ('../../RestaurantSeed').restaurantSeed
 //defining our root route or "/"
 router.route("/")
   .get(restaurantController.findAll)
-  .post(restaurantController.create);
+  .post(restaurantController.create)
+  .put(restaurantController.update);
 
 router.route("/restaurantseed")
   .get(function(req, res){
@@ -22,7 +23,7 @@ router.route("/restaurantseed")
 
 router.route("/:id")
   .get(restaurantController.findById)
-  .put(restaurantController.update)
+  // .put(restaurantController.update)
   .delete(restaurantController.remove);
 
 module.exports = router;
