@@ -23,7 +23,7 @@ router.route("/restaurantseed")
 
 router.route("/:id")
   .get(restaurantController.findById)
-  .put(restaurantController.update)
+  // .put(restaurantController.update)
   .delete(restaurantController.remove);
 
 module.exports = router;
