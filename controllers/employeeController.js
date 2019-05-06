@@ -10,9 +10,18 @@ module.exports = {
     },
 
     create: function(req, res) {
-        db.Employees.create(req.body)
-          .then(dbEmp => res.json(dbEmp))
-          .catch(err => res.status(422).json(err));
+      db.Employee.create(req.body)
+      .then(function(dbEmployee) {
+        return db.Restaurant.findOneAndUpdate({}, { $push: { Employee: dbEmployee._id } }, { new: true });
+      })
+      .then(function(dbUser) {
+        // If the User was updated successfully, send it back to the client
+        res.json(dbUser);
+      })
+      .catch(function(err) {
+        // If an error occurs, send it back to the client
+        res.json(err);
+      });
     },
     
       findById: function(req, res) {
