@@ -20,7 +20,11 @@ var EmployeeSchema = new Schema({
     },
     password: {
         type: String
+    },
+    restaurantId: {
+        type: String
     }
+
 });
 
 EmployeeSchema.methods = {
