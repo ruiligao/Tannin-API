@@ -2,7 +2,7 @@ const mongoose =require('mongoose');
 const db = require('./models');
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/restaurant"
+    process.env.MONGODB_URI || "mongodb://localhost/wines"
 );
 
 var restaurantSeed = [
