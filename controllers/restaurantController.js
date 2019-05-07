@@ -37,11 +37,22 @@ module.exports = {
       },
       
       //---------------------------
-    remove: function(req, res) {
-      db.Restaurants.findById(req.params.id)
-        .then(dbResto => dbResto.remove())
-        .then(dbResto => res.json(dbResto))
-        .catch(err => res.status(422).json(err));
-  }
+  //   remove: function(req, res) {
+  //     db.Restaurants.remove()(req.params.id)
+  //       .then(dbResto => dbResto.remove())
+  //       .then(dbResto => res.json(dbResto))
+  //       .catch(err => res.status(422).json(err));
+  // }
+
+  remove: function(req, res) {
+
+    db.Restaurants.update({}, {$pull : {"Wines" : req.params.id}})
+    // db.Restaurants.remove({
+    //   Wines: req.params.id
+    // })
+      // .then(dbResto => dbResto.remove())
+      .then(dbResto => res.json(dbResto))
+      .catch(err => res.status(422).json(err));
+}
     
 }
