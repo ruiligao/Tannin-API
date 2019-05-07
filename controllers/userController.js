@@ -39,7 +39,7 @@ module.exports = {
 		if (req.user) {
 			req.session.destroy()
 			res.clearCookie('connect.sid') // clean up!
-			return res.json({ msg: 'logging you out' })
+			return res.json({ msg: 'OK' })
 		} else {
 			return res.json({ msg: 'no user to log out!' })
 		}
@@ -61,7 +61,7 @@ module.exports = {
 				})
 				newRestaurant.save((err, saveRestaurant) => {
 					if (err) return res.json(err)
-					return res.json(saveRestaurant)
+					// return res.json(saveRestaurant)
 				})
 				db.Employees.create({
 					firstName: firstName,
