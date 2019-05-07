@@ -18,14 +18,14 @@ app.use(express.json());
 
 app.use(cors());
 // console.log(db);
-app.use(
-    session({
-        secret: process.env.APP_SECRET || 'this is the default passphrase',
-        store: new MongoStore({ mongooseConnection: db }),
-        resave: false,
-        saveUninitialized: false
-    })
-)
+// app.use(
+//     session({
+//         secret: process.env.APP_SECRET || 'this is the default passphrase',
+//         store: new MongoStore({ mongooseConnection: db }),
+//         resave: false,
+//         saveUninitialized: false
+//     }))
+app.use(session({secret: "keyboard cat", resave: true, saveUninitialized: true }))
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -70,4 +70,6 @@ app.use(routes);
 //     res.status(500)
 // })
 
-app.listen(PORT);
+app.listen(PORT, function(){
+    console.log("Listening on port %s.", PORT)
+});

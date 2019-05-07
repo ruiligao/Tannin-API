@@ -5,5 +5,6 @@ const addwineController = require("../../controllers/addwineController");
 router.route("/")
 .put(addwineController.update)
 
+.delete(addwineController.remove);
 
 module.exports = router;
