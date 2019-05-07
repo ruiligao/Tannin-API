@@ -12,6 +12,7 @@ const signupLoginRoutes = require("./signupLogin");
 // router.use("/books", bookRoutes);
 router.use("/user", signupLoginRoutes);
 const addwineRoutes = require("./Addwine");
+const getwineRoutes = require("./Getwine");
 
 router.use("/employees", employeesRoutes);
 router.use("/restaurant", restaurantRoutes);
@@ -19,6 +20,7 @@ router.use("/wine", wineRoutes);
 
 router.use("/addwine", addwineRoutes);
 
+router.use("/getwine", getwineRoutes);
 
 
 
