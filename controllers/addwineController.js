@@ -15,8 +15,7 @@ module.exports = {
       remove: function(req, res) {
         console.log(req.body);
 
-        db.Restaurants.findOneAndUpdate(
-          { "Wines._id" : ObjectId(req.body) }, 
+        db.Restaurants.findOneAndUpdate({},
           { "$pull": { "Restaurants.$.Wines": req.body } } 
       )
         // db.Restaurants.update(
