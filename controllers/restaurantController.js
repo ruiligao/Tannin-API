@@ -4,8 +4,7 @@ const db = require("../models");
 module.exports = {
     findAll: function(req, res) {
         db.Restaurants.find()
-          .then(dbResto => res.json(dbResto))
-          .catch(err => res.status(422).json(err));
+          .then(dbResto => res.jstus(422).json(err));
     },
     
 //DMS -- RESTAURANT MODEL
