@@ -15,11 +15,11 @@ module.exports = {
             password: password,
             restaurantId: restaurantId,
             isAdmin: false
-        }).then(data=>{
-            console.log(data);
-            db.Restaurants.findOneAndUpdate({_id: data.restaurantId}, {$push:{Employees: data._id}}, {new: true}).then(data=> {
-                console.log(data);
-                res.json(data);
+        }).then(employee=>{
+            console.log(employee);
+            db.Restaurants.findOneAndUpdate({_id: employee.restaurantId}, {$push:{Employees: employee._id}}, {new: true}).then(resturant=> {
+                // console.log(d);
+                res.json({employee,resturant});
             });
         });  
     }

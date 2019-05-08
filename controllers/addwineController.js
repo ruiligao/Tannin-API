@@ -34,10 +34,14 @@ module.exports = {
            console.log("////////////////");
            console.log(req.body);
            console.log("////////////////");
-           db.Restaurant.findOne({_id:restaurantId}).then(wine=>{
-               console.log(Wines);
-               if(!Wines){
-                db.Restaurants.findOneAndUpdate({}, { $push: { Wines: Wines } }, { new: true })
+           db.Restaurants.findOne({_id:restaurantId}).then(wine=>{
+             console.log("((((((((((((((((((((");
+               console.log(wine.Wines);
+               console.log("))))))))))))))))))))))");
+               console.log(wine.$)
+               if(!wine.Wines.includes(Wines)){
+              
+                db.Restaurants.findOneAndUpdate({_id:restaurantId}, { $push: { Wines: Wines } }, { new: true })
            .then(data=>{
                console.log(data);
 
@@ -46,7 +50,7 @@ module.exports = {
            });  
        }
        else {
-           res.json("Employee already exists");
+           res.json("This wine already exists");
        }
    })
                // db.Restaurants.findOneAndUpdate({_id:newEmployee.restaurantId}, {$push: {employees:newEmployee._id}},{new: true}).then(data=>{
