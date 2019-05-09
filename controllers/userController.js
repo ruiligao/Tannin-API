@@ -15,25 +15,7 @@ module.exports = {
 			return res.json({ user: null })
 		}
 	},
-	// login: function (req, res,done) {
-	// 	console.log('POST to /login')
-	// 	console.log(req.boy);
-	// 	db.Employees.findOne({ email: email }, (err, userMatch) => {
-	// 		console.log(userMatch);
-	// 		if (err) {
-	// 			return done(err);
-	// 		}
-	// 		if (!userMatch) {
-	// 			return done(null, false, { message: 'Incorrect email' });
-	// 		}
-	// 		console.log("pwd");
-	// 		if (!userMatch.checkPassword(password)) {
-	// 			return done(null, false, { message: 'Incorrect password' });
-	// 		}
-	// 		console.log("done");
-	// 		 return done(null, userMatch);
-	// 	});
-	// },
+	
 	logout: function (req, res) {
 		console.log(req.user)
 		if (req.user) {

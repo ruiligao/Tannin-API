@@ -4,7 +4,7 @@ const addEmployController = require("../../controllers/addEmployController");
 //defining our root route or "/"
 router.route("/")
 .post(addEmployController.addEmployee)
-
-// .delete(addEmployController.removeEmployee);
+// router.route("/delete")
+.put(addEmployController.removeEmployee);
 
 module.exports = router;
