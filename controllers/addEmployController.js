@@ -1,7 +1,7 @@
 const db = require("../models");
 module.exports = {
     addEmployee: function (req, res) {
-        const { name, lastName, email, password, restaurantId } = req.body;
+        const { name, lastName, email, password, restaurantName, restaurantId } = req.body;
         console.log("////////////////");
         console.log(req.body);
         console.log("////////////////");
@@ -13,6 +13,7 @@ module.exports = {
                     lastName: lastName,
                     email: email,
                     password: password,
+                    restaurantName:restaurantName,
                     restaurantId: restaurantId,
                     isAdmin: false
                 }).then(employee => {
