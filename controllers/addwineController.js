@@ -29,6 +29,43 @@ module.exports = {
 
         },    
 
+        addWine: function (req, res) {
+          const {Wines, restaurantId}= req.body;
+           console.log("////////////////");
+           console.log(req.body);
+           console.log("////////////////");
+           db.Restaurants.findOne({_id:restaurantId}).then(wine=>{
+             console.log("((((((((((((((((((((");
+               console.log(wine.Wines);
+               console.log("))))))))))))))))))))))");
+               console.log(wine.$)
+               if(!wine.Wines.includes(Wines)){
+              
+                db.Restaurants.findOneAndUpdate({_id:restaurantId}, { $push: { Wines: Wines } }, { new: true })
+           .then(data=>{
+               console.log(data);
+
+                   res.json(data);
+  
+           });  
+       }
+       else {
+           res.json("This wine already exists");
+       }
+   })
+               // db.Restaurants.findOneAndUpdate({_id:newEmployee.restaurantId}, {$push: {employees:newEmployee._id}},{new: true}).then(data=>{
+               //     console.log(data);
+               //     res.json(data);
+               // })
+               // .catch(function (err) {
+               //     // If an error occurs, send it back to the client
+               //     res.json(err);
+               // });
+          
+               // Specify that we want to populate the retrieved users with any associated notes
+               
+               
+       }
 
         
       

@@ -4,8 +4,7 @@ const db = require("../models");
 module.exports = {
     findAll: function(req, res) {
         db.Restaurants.find()
-          .then(dbResto => res.json(dbResto))
-          .catch(err => res.status(422).json(err));
+          .then(dbResto => res.jstus(422).json(err));
     },
     
 //DMS -- RESTAURANT MODEL
@@ -45,14 +44,17 @@ module.exports = {
   // }
 
   remove: function(req, res) {
-
-    db.Restaurants.update({}, {$pull : {"Wines" : req.params.id}})
-    // db.Restaurants.remove({
-    //   Wines: req.params.id
-    // })
-      // .then(dbResto => dbResto.remove())
-      .then(dbResto => res.json(dbResto))
-      .catch(err => res.status(422).json(err));
-}
-    
+    console.log(req.body);
+        const {id, restaurantId} = req.body
+        console.log(restaurantId);
+      db.Restaurants.update({_id:restaurantId},{$pull:{Wines:id}}).then(restaurant=>{
+        console.log("?????????????")
+          console.log(restaurant)
+          console.log("?????????????")
+          // res.json(restaurant);
+         
+          
+              res.json(restaurant)
+          })
+      } 
 }
