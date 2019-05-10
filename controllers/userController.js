@@ -15,7 +15,7 @@ module.exports = {
 			return res.json({ user: null })
 		}
 	},
-	
+
 	logout: function (req, res) {
 		console.log(req.user)
 		if (req.user) {
@@ -43,16 +43,20 @@ module.exports = {
 				})
 				newRestaurant.save((err, saveRestaurant) => {
 					if (err) return res.json(err)
+					console.log("????????????")
+					console.log(saveRestaurant);
+					console.log("????????????")
+					db.Employees.create({
+						firstName: firstName,
+						lastName: lastName,
+						email: email,
+						password: password,
+						restaurantId: saveRestaurant._id,
+						isAdmin: true
+					}).then(newEmployee => res.json(newEmployee))
+						.catch(err => res.status(422).json(err));
 					// return res.json(saveRestaurant)
 				})
-				db.Employees.create({
-					firstName: firstName,
-					lastName: lastName,
-					email: email,
-					password: password,
-					isAdmin: true
-				}).then(newEmployee => res.json(newEmployee))
-					.catch(err => res.status(422).json(err));
 			}
 		})
 	}
