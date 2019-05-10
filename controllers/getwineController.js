@@ -12,7 +12,7 @@ module.exports = {
         console.log("////////////////");
         console.log(req.body);
         console.log("////////////////");
-        db.Restaurants.findOne({email: req.body.email})
+        db.Restaurants.findOne({_id: req.body.restaurantId})
       
           // Specify that we want to populate the retrieved users with any associated notes
           .populate("Wines")

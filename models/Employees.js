@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const bcrypt = require('bcryptjs')
-mongoose.promise = Promise
+mongoose.promise = Promise;
 
 var EmployeeSchema = new Schema({
     firstName: {
@@ -24,7 +24,6 @@ var EmployeeSchema = new Schema({
     restaurantId: {
         type: String
     }
-
 });
 
 EmployeeSchema.methods = {
