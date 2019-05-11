@@ -27,8 +27,7 @@ module.exports = {
          .then(dbResto => res.json(dbResto))
       .catch(err => res.status(422).json(err));
 
-        },    
-
+        }, 
         addWine: function (req, res) {
           const {Wines, restaurantId}= req.body;
            console.log("////////////////");
