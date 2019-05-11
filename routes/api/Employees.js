@@ -18,6 +18,8 @@ router.route("/empseed")
         console.error(err);
       });
   });
+router.route("/score")
+.put(employeeController.addScore)
 
 router
   .route("/:id")
