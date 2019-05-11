@@ -21,6 +21,10 @@ var EmployeeSchema = new Schema({
     password: {
         type: String
     },
+    scores: [{
+        wine:String,
+        score: String
+    }],
 
     restaurantName: {
         type: String
