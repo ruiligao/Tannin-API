@@ -51,6 +51,7 @@ module.exports = {
 						lastName: lastName,
 						email: email,
 						password: password,
+						restaurantName: saveRestaurant.name,
 						restaurantId: saveRestaurant._id,
 						isAdmin: true
 					}).then(newEmployee => res.json(newEmployee))

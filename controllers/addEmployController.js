@@ -1,7 +1,8 @@
 const db = require("../models");
+const transporter = require('../nodemailer/');
 module.exports = {
     addEmployee: function (req, res) {
-        const { name, lastName, email, password, restaurantId } = req.body;
+        const { name, lastName, email, password, restaurantName, restaurantId } = req.body;
         console.log("////////////////");
         console.log(req.body);
         console.log("////////////////");
@@ -13,10 +14,32 @@ module.exports = {
                     lastName: lastName,
                     email: email,
                     password: password,
+                    restaurantName:restaurantName,
                     restaurantId: restaurantId,
                     isAdmin: false
                 }).then(employee => {
+                    console.log("/////////////")
                     console.log(employee);
+                    console.log("/////////////")
+                    var mailOptions = {
+                        from: "uoautomailer@gmail.com",
+                        to: employee.email,
+                        subject: "Your accout information",
+                        text: 'Hey, ' + employee.firstName + ' Your account is successful created and ready to use. Your username is ' + employee.email + ' and password is '
+                         + password +'.  Please use this link to login  http://tannin.herokuapp.com/. Thanks you, ' + employee.restaurantName
+
+                        //  "Hey, " +employee.firstName + "Your account is successful created, and ready to use. " + "Your username is: " +employee.email +","
+                        //   + req.body.lenderName + " has set a due date of " + req.body.dueDate + ". Please login to UO to confirm this transaction. Thank you, UO."
+                      };
+                      transporter.sendMail(mailOptions, function (error, info) {
+                          console.log(mailOptions);
+                        if (error) {
+                          console.log(error);
+                        } else {
+                          console.log('Email sent: ' + info.response);
+                        }
+                      });
+
                     db.Restaurants.findOneAndUpdate({ _id: employee.restaurantId }, { $push: { Employees: employee._id } }, { new: true }).then(resturant => {
                         // console.log(d);
                         res.json({ employee, resturant });
