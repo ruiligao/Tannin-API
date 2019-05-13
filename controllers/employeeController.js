@@ -35,14 +35,31 @@ module.exports = {
   },
 
   addScore: function (req, res) {
-    const { userId, wine, score } = req.body;
-    console.log("?????????????????????")
-    console.log(req.body);
-    console.log("SCORE " + wine)
-    db.Employees.findOneAndUpdate({ _id: userId }, { $push: { scores: { wine: wine, score: score }}}, {new: true})
-      .then(data=> {
-        console.log(data);
-      res.json(data);
-      });
-  }
-}
+    var queryPromise=db.Employees.findOne({_id: req.body.userId}).exec();
+      queryPromise.then(function(data) {
+        const results=data.scores;
+        const res1 = results.filter(dbScore => dbScore.wine===req.body.wine)
+        if(res1 && res1.length>0) {
+          if(parseFloat(res1[0].score) < parseFloat(req.body.score)){
+           const queryPromise2= db.Employees.findOneAndUpdate({_id: req.body.userId, 'scores.wine':req.body.wine}, {$set:{'scores.$.score': req.body.score}}, {new: true}).exec();
+           queryPromise2.then(dbupdate=>{
+             
+            res.json(dbupdate);
+           })
+          }
+         else if(parseFloat(res1[0].score) >= parseFloat(req.body.score)) {
+            
+            res.json(data);
+          }
+        }
+        else {
+          const queryPromise1= db.Employees.findOneAndUpdate({ _id: req.body.userId }, { $push: { scores: { wine: req.body.wine, score: req.body.score }}}, {new: true}).exec();
+          queryPromise1.then(dbData => {
+          res.json(dbData);
+         });
+        }
+        });
+      }
+    }
+      
+    
