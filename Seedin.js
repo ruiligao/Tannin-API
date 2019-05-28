@@ -23,6 +23,7 @@ var wineSeed = [
         "primaryFlavors": ["Blackberry", "Dark Chocolate", "Game", "White Pepper", "Anise"],
         "sweetness": "Bone-dry",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "13.5-15% ABV",
@@ -30,7 +31,7 @@ var wineSeed = [
         "glassType": "Oversized",
         "decant": "1 Hour",
         "ageability": "10+ years",
-        "pairings": "Bandol reds pair wonderfully alongside gamey meats including venison, buffalo burgers, barbecue, and beefy stews. Try spicing dishes with white pepper or cumin."
+        "pairings": ["gamey meats", "venison", "buffalo", "stews"]
     },    
     {
         "name": "Banyuls",
@@ -39,6 +40,7 @@ var wineSeed = [
         "primaryFlavors": ["Stewed Strawberry", "Baked Prues", "Earth", "Dark Chocolate"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Medium-High Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "Over 15% ABV",
@@ -46,7 +48,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ years",
-        "pairings": "The red or rouge styles of Banyuls including those labeled Traditionelle, Rimage, and Hors Age pair exceptionally well with chocolate!"
+        "pairings": ["chocolate"]
     },    
     {
         "name": "Barolo",
@@ -55,6 +57,7 @@ var wineSeed = [
         "primaryFlavors": ["Raspberry", "Cherry", "Rose", "Tar", "Licorice"],
         "sweetness": "Bone Dry",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "High Acidity",
         "alcohol": "13.5-15% ABV",
@@ -62,7 +65,7 @@ var wineSeed = [
         "glassType": "Aroma Collector",
         "decant": "1 Hour",
         "ageability": "10+ Years",
-        "pairings": "It's rigid tannins and delicate floral aroma profile make Barolo ideal for subtle-but-rich foods like truffle risotto, handmade pasta and thinly sliced charcuterie."
+        "pairings": ["truffle", "risotto", "pasta", "charcuterie"]
     },    
     {
         "name": "Beaujolais",
@@ -71,14 +74,15 @@ var wineSeed = [
         "primaryFlavors": ["Pomegranate", "Blackberry Bramble", "Violet", "Potting Soil", "Banana"],
         "sweetness": "Dry",
         "body": "Medium-light Body",
-        "tannin": " Medium-low Tannin",
+        "varietal": ["no data"],
+        "tannin": "Medium-low Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "10-11.5% ABV",
         "temp": "55–60°F / 13–16°C",
         "glassType": "Aroma Collector",
         "decant": "No",
         "ageability": "5-10 Years",
-        "pairings": "Given its high acidity and lower tannin, Beaujolais is one of few red wines that can span the gamut of main courses from barbecue beef to cedar-planked salmon."
+        "pairings": ["beef", "pork", "chicken", "salmon"]
     },  
     {
         "name": "Bordeaux Blend (Red)",
@@ -87,6 +91,7 @@ var wineSeed = [
         "primaryFlavors": ["Black Currant", "Black Cherry", "Graphite", "Chocolate", "Dried Herbs"],
         "sweetness": "Bone Dry",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "13.5-15% ABV",
@@ -94,7 +99,7 @@ var wineSeed = [
         "glassType": "Oversized",
         "decant": "1 Hour",
         "ageability": "10+ Years",
-        "pairings": "The noticeable tannins make this blend make it an excellent choice to match with steak and other red meat dishes. Keep seasoning simple, such as salt and pepper."
+        "pairings": ["steak", "red meat"]
     }, 
     {
         "name": "Bordeaux Blend (White)",
@@ -103,6 +108,7 @@ var wineSeed = [
         "primaryFlavors": ["Grapefruit", "Gooseberry", "Lemon Curd", "Chamomile", "Lemongrass"],
         "sweetness": "Dry",
         "body": "Medium-light Bosy",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -110,7 +116,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Oaked examples beg for tarragon-cream sauces over white meats or trout. Unoaked versions do well with briny seafare such as oysters, mussels, and sushi."
+        "pairings": ["trout", "oysters", "mussels", "sushi"]
     },
     {
         "name": "Brunello di Montalcino",
@@ -119,6 +125,7 @@ var wineSeed = [
         "primaryFlavors": ["Cherry", "Plum", "New Leather", "Herbs", "Clay Pot"],
         "sweetness": "Bone Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "13.5-15% ABV",
@@ -126,7 +133,7 @@ var wineSeed = [
         "glassType": "Oversized",
         "decant": "1 Hour",
         "ageability": "10+ Years",
-        "pairings": "Keep pairings simple and rich in fat to highlight the wine's complex flavor profile. For example, try a salumi such as Prosciutto, Pancetta, Coppa and Bresaola."
+        "pairings": ["prosciutto", "pancetta", "coppa", "bresaola"]
     },
     {
         "name": "Cap Classique",
@@ -135,6 +142,7 @@ var wineSeed = [
         "primaryFlavors": ["Lemon", "White Cherry", "Ginger", "Cream", "Brioche"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -142,7 +150,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "5-10 Years",
-        "pairings": "Often a touch fruitier than French sparklers, Cap Classique wines pair excellently with chicken and pork dishes that play with sweet and sour flavors."
+        "pairings": ["chicken", "pork"]
     },
     {
         "name": "Cava",
@@ -151,6 +159,7 @@ var wineSeed = [
         "primaryFlavors": ["Quince", "Lime", "Yellow Apple", "Chamomile", "Almond"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -158,7 +167,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "An amazing wine with Spanish favorites like tapas and paella, but also amazing with Mexican food and get this, red bean chili."
+        "pairings": ["tapas", "paella", "red bean chili"]
     },
     {
         "name": "Chablis",
@@ -167,6 +176,7 @@ var wineSeed = [
         "primaryFlavors": ["Quince", "Starfruit", "Lime Peel", "White Flowers", "Chalk"],
         "sweetness": "Bone Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -174,7 +184,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "10+ years",
-        "pairings": "Crisp and light; Chablis is really a match made in heaven when it comes to oysters, as the soils in Chablis are literally crushed seashells from the Jurassic period!"
+        "pairings": ["oysters"]
     },
     {
         "name": "Champagne",
@@ -183,6 +193,7 @@ var wineSeed = [
         "primaryFlavors": ["Citrus", "Yellow Apple", "Cream", "Almond", "Toast"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -190,7 +201,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "10+ years",
-        "pairings": "Just about anything that's salty, fried or fishy will pair magically with Champagne. Don't just use it as an aperitif, try it with the main course as well."
+        "pairings": ["salty food", "fried food"]
     },
     {
         "name": "Chianti",
@@ -199,6 +210,7 @@ var wineSeed = [
         "primaryFlavors": ["Cherry", "Plumb", "Tomato Leaf", "Leather", "Clay Pot"],
         "sweetness": "Bone Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5%-13.5% ABV",
@@ -206,7 +218,7 @@ var wineSeed = [
         "glassType": "Universal",
         "decant": "30 minutes",
         "ageability": "5-10 Years",
-        "pairings": "High acid wines crave high acid foods. You'll do well with tomato-based sauces. Think spaghetti and meatballs or vegetable lasagna."
+        "pairings": ["tomato-based sauces", "spaghetti", "meatballs", "lasagna"]
     },
     {
         "name": "Crémant",
@@ -215,6 +227,7 @@ var wineSeed = [
         "primaryFlavors": ["Lemon", "Peach", "White Cherry", "Almond", "Toast"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -222,7 +235,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Crémant wines vary in style and taste and include both white to rosé styles. Generally speaking, Crémant makes an excellent accompaniment to fried foods, soft cheeses, and salty appetizers."
+        "pairings": ["fried foods", "soft cheeses", "salty appetizers"]
     },
     {
         "name": "Franciacorta",
@@ -231,6 +244,7 @@ var wineSeed = [
         "primaryFlavors": ["Lemon", "Peach", "White Cherry", "Almond", "Toast"],
         "sweetness": "dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -238,7 +252,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "5-10 Years",
-        "pairings": "A fruity sparkling like Franciacorta will pair perfectly with soft ripened cheeses (like brie), dried fruits (like apricot and cherry), and roasted salted nuts."
+        "pairings": ["soft cheese", "ripened cheeses", "dried fruits", "roasted salted nuts"]
     },
     {
         "name": "Ice Wine",
@@ -247,6 +261,7 @@ var wineSeed = [
         "primaryFlavors": ["Pineapple", "Lemon Curd", "Honneysuckle", "Apricot", "Lychee"],
         "sweetness": "Very Sweet",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "10-11.5% ABV",
@@ -254,7 +269,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Ice wines pair well alongside fruit-driven desserts, cheesecake, ice cream and with soft cheeses like Brie and pungent cheeses such as Stilton."
+        "pairings": ["fruity desserts", "cheesecake", "ice cream", "soft cheese", "pungent cheese"]
     },
     {
         "name": "Lambrusco",
@@ -263,6 +278,7 @@ var wineSeed = [
         "primaryFlavors": ["Strawberry", "Blackberry", "Rhubarb", "Hibiscus", "Potting Soil"],
         "sweetness": "Dry",
         "body": "Medium-light Body",
+        "varietal": ["no data"],
         "tannin": "Medium Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "10-11.5% ABV",
@@ -270,7 +286,7 @@ var wineSeed = [
         "glassType": "Universal",
         "decant": "No",
         "ageability": "1-3 Years",
-        "pairings": "A great food pairing wine with everything from pizza to burgers. Try the local matches of Prosciutto di Parma and Parmigiano-Reggiano for true authenticity."
+        "pairings": ["pizza", "burgers", "prosciutto di parma", "parmigiano-reggiano"]
     },
     {
         "name": "Madeira",
@@ -279,14 +295,15 @@ var wineSeed = [
         "primaryFlavors": ["Burnt Caramel", "Walnut Oil", "Peach", "Hazelnut", "Orange Peel"],
         "sweetness": "Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "Over 15% ABV",
         "temp": "55–60°F / 13–16°C",
-        "glassType": " Dessert",
+        "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Madeira is a popular choice for reduction sauces because of its walnut-like flavors and tart acidity, but it also pairs well with artichoke, pea soup, and asparagus."
+        "pairings": ["artichoke", "pea soup", "asparagus"]
     },
     {
         "name": "Marsala",
@@ -295,6 +312,7 @@ var wineSeed = [
         "primaryFlavors": ["Stewed Apricot", "Vanilla", "Tamarind", "Brown Sugar", "Tobacco"],
         "sweetness": "Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "Over 15% ABV",
@@ -302,7 +320,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Marsala mushroom sauce will delight over chicken, pork, and tofu but you can also sip the wine alongside nuts, charcuterie, dried fruit and firm cheeses."
+        "pairings": ["nuts", "charcuterie", "dried fruit", "firm cheeses"]
     },
     {
         "name": "Maury",
@@ -311,6 +329,7 @@ var wineSeed = [
         "primaryFlavors": ["Stewed Strawberry", "Baked Brune", "Baked Earth", "Ginger Snap", "Burnt Caramel"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Medium-High Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "Over 15% ABV",
@@ -318,7 +337,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "30 Minutes",
         "ageability": "10+ Years",
-        "pairings": "With the fruit character and sweetness, looking to dessert is advisable. Try chocolate mousse cake, foie gras, prunes, dates, or blue cheese."
+        "pairings": ["dessert", "chocolate mousse", "cake", "foie gras", "prunes", "dates", "blue cheese"]
     },
     {
         "name": "Moscatel de Setúbal",
@@ -327,6 +346,7 @@ var wineSeed = [
         "primaryFlavors": ["Mandarin Orange", "Grape", "Dried Apricot", "Honey", "Caramel"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "Under 10% ABV",
@@ -334,7 +354,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Moscatel de Setúbal is amazing alongside Portuguese cheeses with a gooey middle such as Queijo de Ovelha. Or, pair it with any dessert you might drizzle caramel onto."
+        "pairings": ["Portuguese cheeses", "gooey cheese", "Queijo de Ovelha", "caramel", "dessert"]
     },
     {
         "name": "Orange Wine",
@@ -343,6 +363,7 @@ var wineSeed = [
         "primaryFlavors": ["Bruised Apple", "Jackfruit", "Linseed Oil", "Juniper", "Honey"],
         "sweetness": "Bone Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Medium Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -350,7 +371,7 @@ var wineSeed = [
         "glassType": "Universal",
         "decant": "30 Minute",
         "ageability": "5-10 Years",
-        "pairings": "The intense savory flavor and tannins in this white wine make it a great pairing choice for roasted meats and resinous herbs such as sage and rosemary."
+        "pairings": ["roasted meats", "sage", "rosemary"]
     },
     {
         "name": "Port",
@@ -359,6 +380,7 @@ var wineSeed = [
         "primaryFlavors": ["Plum", "Dried Cherry", "Chocolate", "Raisin", "Cinnamon"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "Over 15% ABV",
@@ -366,7 +388,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Port and blue cheese are an exceptional pairing, the pungency and saltiness vs. the sweetness is next level."
+        "pairings": ["blue cheese"]
     },
     {
         "name": "Port (White)",
@@ -375,6 +397,7 @@ var wineSeed = [
         "primaryFlavors": ["Spiced Pear", "Quince", "Almond", "Honey", "Vanilla"],
         "sweetness": "Very Sweet",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "Over 15% ABV",
@@ -382,7 +405,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Port wines do exceptionally well when paired with chocolate and fruit tarts but perhaps the best pairing of them all is an LBV or Vintage Port and Stilton cheese."
+        "pairings": ["chocolate", "fruit tarts", "Stilton cheese"]
     },
     {
         "name": "Priorat",
@@ -391,6 +414,7 @@ var wineSeed = [
         "primaryFlavors": ["Black Cherry", "Plum", "Crushed Gravel", "Licorice", "Dark Chocolate"],
         "sweetness": "Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "High Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "13.5-15% ABV",
@@ -398,7 +422,7 @@ var wineSeed = [
         "glassType": "Oversized",
         "decant": "1 Hour",
         "ageability": "10+ Years",
-        "pairings": "Grilled meats or vegetables, something that will stand up to the tannins in the wine is key here. Avoid chili heat, as alcohol content enhances these flavours."
+        "pairings": ["grilled meats", "grilled vegetables"]
     },
     {
         "name": "Prosecco",
@@ -407,6 +431,7 @@ var wineSeed = [
         "primaryFlavors": ["Green Apple", "Honeydew Melon", "Pear", "Lager", "Cream"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5-13.5%",
@@ -414,7 +439,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "1-3 Years",
-        "pairings": "Prosecco is a super food-friendly sparkling wine that goes great with antipasto, cured meats, almonds. It’s also a natural pairing with spicy Asian food."
+        "pairings": ["antipasta", "cured meats", "almonds", "spicy Asian food"]
     },
     {
         "name": "Provence (Rosé)",
@@ -423,6 +448,7 @@ var wineSeed = [
         "primaryFlavors": ["Strawberry", "Honeydew Melon", "Rose Petal", "Celery", "Watermelon"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -430,7 +456,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Provençal rosé goes as well with a summer day as it does with charcuterie, salads, light pastas, fresh fruit, or cold appetisers such as potato or pasta salads"
+        "pairings": ["charcuterie", "salads", "light pastas", "fresh fruit", "potato", "pasta salads"]
     },
     {
         "name": "Rhône",
@@ -439,6 +465,7 @@ var wineSeed = [
         "primaryFlavors": ["Raspberry", "Blackberry", "Rosemary", "Baking Spices", "Lavendar"],
         "sweetness": "Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Medium-high Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "13.5-15% ABV",
@@ -446,7 +473,7 @@ var wineSeed = [
         "glassType": "Aroma Collector",
         "decant": "30 Minutes",
         "ageability": "10+ Years",
-        "pairings": "The Rhône / GSM blend is a versatile food pairing wine that works particularly well with dishes featuring Mediterranean spices including red pepper, sage, rosemary, and olives."
+        "pairings": ["red pepper", "sage", "rosemary", "olives"]
     },
     {
         "name": "Rhône Blend (White)",
@@ -455,6 +482,7 @@ var wineSeed = [
         "primaryFlavors": ["Meyer Lemon", "Apricot", "Beeswax", "Orange Zest", "Brioche"],
         "sweetness": "Dry",
         "body": "Medium-light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-low Acidity",
         "alcohol": "13.5-15% ABV",
@@ -462,7 +490,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "5-10 Years",
-        "pairings": "With it's bolder style and peachy notes, the Rhône white blend is an awesome match richer poultry and fish dishes that feature roasted fruit or fruit-based sauces."
+        "pairings": ["rich poultry", "rich fish", "roasted fruit", "fruit-based sauces"]
     },
     {
         "name": "Rioja",
@@ -471,6 +499,7 @@ var wineSeed = [
         "primaryFlavors": ["Cherry", "Plum", "Dill", "Vanilla", "Old Leather"],
         "sweetness": "Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Medium-high Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "13.5-15% ABV",
@@ -478,7 +507,7 @@ var wineSeed = [
         "glassType": "Universal",
         "decant": "1 Hour",
         "ageability": "10+ Years",
-        "pairings": "Rioja and lamb is the ultimate; dusty tannins crave the tender fat capped meat. Also try chorizo enhanced dishes, roasted pork, or chicken."
+        "pairings": ["lamb", "chorizo", "roasted pork", "roasted chicken"]
     },
     {
         "name": "Sancerre",
@@ -487,6 +516,7 @@ var wineSeed = [
         "primaryFlavors": ["Gooseberry", "Grapefruit", "Honeydew Melon", "Hay", "Flint"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -494,7 +524,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Sancerre and pan fried goat cheese is last-meal worthy, the zippiness of the Sauvignon blanc is magic against the tangy cheese. Oysters, salads, or citrus sauces are other good options."
+        "pairings": ["goat cheese", "Oysters", "salad", "citrus"]
     },
     {
         "name": "Sauternais",
@@ -503,6 +533,7 @@ var wineSeed = [
         "primaryFlavors": ["Marmalade", "Apricot", "Quince", "Honey", "Ginger"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -510,7 +541,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Excellent served with wash-rind soft cheeses where the sweetness in the wine counteracts the funk' of the cheese. The most classic pairing is Roquefort."
+        "pairings": ["wash-rind soft cheeses", "roquefort"]
     },
     {
         "name": "Sherry",
@@ -519,6 +550,7 @@ var wineSeed = [
         "primaryFlavors": ["Jackfruit", "Saline", "Preserved Lemon", "Brazil Nut", "Almond"],
         "sweetness": "Off-Dry",
         "body": "Medium-light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "Over 15% ABV",
@@ -526,7 +558,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Serve a Fino or Manzanilla with smoked, fried or grilled fish or vegetables. Try Amontillado with barbecue ribs. Try a Cream or PX with gooey cheeses."
+        "pairings": ["smoked fish", "fried fish", "grilled fish", "grilled vegetables", "barbecue ribs", "gooey cheeses"]
     },
     {
         "name": "Tokaji Aszú",
@@ -535,6 +567,7 @@ var wineSeed = [
         "primaryFlavors": ["Tangerine", "Apricot", "Honey", "Ginger", "Marzipan"],
         "sweetness": "Very Sweet",
         "body": "Medium Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -542,7 +575,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "A wine with this intensity of sweetness is tough to pair; think seriously rich foie gras, blue cheese, or crème caramel."
+        "pairings": ["foie gras", "blue cheese", "crème caramel"]
     },
     {
         "name": "Trento",
@@ -550,7 +583,9 @@ var wineSeed = [
         "summary": "A regional sparkling wine from Northern Italy dedicated to making wines using the Champagne method. Chardonnay features prominently in these bubbly wines although you’ll occasionally find Pinot Noir, Pinot Blanc, or Pinot Meunier blended in.",
         "primaryFlavors": ["Citrus", "Yellow Apple", "White Cherry", "Almond", "Toast"],
         "sweetness": "Dry",
+        "sparkling": "sparkling",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -558,7 +593,7 @@ var wineSeed = [
         "glassType": "Flute",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "Generally, sparkling wine is a safe bet for pairing. It is versatile enough to accompany oysters, seafood, roast chicken, risotto, or creamy pastas."
+        "pairings": ["oysters", "seafood", "roast chicken", "risotto", "creamy pastas"]
     },
     {
         "name": "Txakoli (White)",
@@ -567,6 +602,7 @@ var wineSeed = [
         "primaryFlavors": ["Lime", "Green Strawberry", "Peony", "Dried Herbs", "Saline"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "Under 10% ABV",
@@ -574,7 +610,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "3-5 Years",
-        "pairings": "This low alcohol, spritzy wine is the perfect accompanyment to raw seafood, such as ceviches, oysters or sushi. Also delicious as an aperitif."
+        "pairings": ["raw seafood", "ceviches", "oysters,", "sushi"]
     },
     {
         "name": "Valpolicella",
@@ -583,6 +619,7 @@ var wineSeed = [
         "primaryFlavors": ["Tart Cherry", "Cinnamon", "Chocolate", "Green Peppercorn", "Almond"],
         "sweetness": "Dry",
         "body": "Medium Body",
+        "varietal": ["no data"],
         "tannin": "Medium-low Tannin",
         "acidity": "High Acidity",
         "alcohol": "11.5%-13.5% ABV",
@@ -590,7 +627,7 @@ var wineSeed = [
         "glassType": "University",
         "decant": "30 Minutes",
         "ageability": "10+ Years",
-        "pairings": "The more simple Valpolicella wines pair with burgers and roast chicken. Finer Ripasso and Amarone styles deserve braised meats, steaks, mushrooms and aged cheeses."
+        "pairings": ["burgers", "roast chicken", "braised meats", "steaks", "mushrooms", "aged cheeses"]
     },
     {
         "name": "Vin Jaune",
@@ -599,6 +636,7 @@ var wineSeed = [
         "primaryFlavors": ["Turpentine", "Dried Pear", "Rose Candy", "Fennel", "Toffee Nut"],
         "sweetness": "Dry",
         "body": "Medium-full Body",
+        "varietal": ["no data"],
         "tannin": "Medium-low Tannin",
         "acidity": "Medium-high Acidity",
         "alcohol": "Over 15% ABV",
@@ -606,7 +644,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "A favorite wine pairing with Italian pastries and almond biscotti but will also do excellently with soft and somewhat funky cheeses such as Taleggio"
+        "pairings": ["pastries", "almond biscotti", "soft cheese", "funky cheese", "Taleggio"]
     },
     {
         "name": "Vin Santo",
@@ -615,6 +653,7 @@ var wineSeed = [
         "primaryFlavors": ["Perfume", "Dried Fig", "Raisin", "Almond", "Toffee"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "13.5-15% ABV",
@@ -622,7 +661,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "5-10 Years",
-        "pairings": "Biscotti is the traditional pairing, as the nutty and caramelised notes are echoed in the wine."
+        "pairings": ["biscotti"]
     },
     {
         "name": "Vinho Verde",
@@ -631,6 +670,7 @@ var wineSeed = [
         "primaryFlavors": ["Lemonade", "Pink Grapefruit", "Lime Zest", "Yellow Apple", "White Blossom"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -638,7 +678,7 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "1-3 Years",
-        "pairings": "Bring out the fish tacos, mango salsa, ceviche, California rolls, teriyaki bowls, edamame salad, cilantro-lime chicken and other light sweet-sour dishes."
+        "pairings": ["fish tacos", "mango salsa", "ceviche", "sushi"]
     },
     {
         "name": "Vinsanto",
@@ -647,6 +687,7 @@ var wineSeed = [
         "primaryFlavors": ["Dried Apricot", "Cherry Syrup", "Roasted Pepper", "Caramel", "Bergamot"],
         "sweetness": "Very Sweet",
         "body": "Full Body",
+        "varietal": ["no data"],
         "tannin": "Medium Tannin",
         "acidity": "Medium Acidity",
         "alcohol": "11.5-13.5% ABV",
@@ -654,7 +695,7 @@ var wineSeed = [
         "glassType": "Dessert",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Similar to the Italian Vin Santo, Greek vinsanto would fare well against traditional nutty Greek desserts, such as baklava or a kataïfi tart."
+        "pairings": ["nutty dessert", "baklava", "kataïfi tart"]
     },
     {
         "name": "Vouvray",
@@ -663,6 +704,7 @@ var wineSeed = [
         "primaryFlavors": ["Lemon", "Apricot", "Pear", "Honey", "Chamomile"],
         "sweetness": "Dry",
         "body": "Light Body",
+        "varietal": ["no data"],
         "tannin": "Low to no Tannin",
         "acidity": "High Acidity",
         "alcohol": "10-11.5% ABV",
@@ -670,30 +712,14 @@ var wineSeed = [
         "glassType": "White",
         "decant": "No",
         "ageability": "10+ Years",
-        "pairings": "Vouvray Brut makes a fantastic palate cleanser. Try it with cheese souffle, white fish, pork roasted with apples, and rich pastas."
-    },
-    {
-        "name": "",
-        "pronunciation": "",
-        "summary": "",
-        "primaryFlavors": [],
-        "sweetness": "",
-        "body": "",
-        "tannin": "",
-        "acidity": "",
-        "alcohol": "",
-        "temp": "",
-        "glassType": "",
-        "decant": "",
-        "ageability": "1",
-        "pairings": ""
+        "pairings": ["cheese souffle", "white fish", "pork", "pastas"]
     },
     {
         "name": "Allegrini Palazzo Della Torre - Mini Amarone",
         "pronunciation": "",
         "summary": "This is one of the wines that has made Allegrini famous throughout the world. The vineyard surrounds Villa della Torre, a splendid masterpiece of Renaissance architecture now owned by the family, and produces a full-bodied red wine that has an ageing potential of at least ten years. The blend is the historic combination of Corvina and Rondinella with the addition of a small quantity of Sangiovese. A small percentage of the harvested grapes are left to dry out until December and then added to the previously vinified fresh grapes",
-        "varietals": ["Corvina Veronese 70%, Rondinella 25%, Sangiovese 5%"],
-        "primaryFlavors": ["Pepper", "Pulpy fruits"],
+        "varietal": ["70% Corvina Veronese", "25% Rondinella", "5% Sangiovese"],
+        "primaryFlavors": ["Pepper", "Pulpy fruits", "coffee"],
         "sweetness": "Dry",
         "body": "Full Body",
         "tannin": "Medium Tannin",
@@ -703,33 +729,18 @@ var wineSeed = [
         "glassType": "Large",
         "decant": "2 Hours",
         "ageability": "2 Years",
-        "pairings": "pairs with various Italian dishes, above all risottos, especially those flavoured with saffron, porcini mushrooms and pork; classic dishes such as pasta with Amatriciana and Carbonara sauces, baked lasagna, gnocchi with gorgonzola cheese and walnuts; grilled meats and roasts"
-    },
-    {
-        "name": "",
-        "pronunciation": "",
-        "summary": "",
-        "primaryFlavors": [],
-        "sweetness": "",
-        "body": "",
-        "tannin": "",
-        "acidity": "",
-        "alcohol": "",
-        "temp": "",
-        "glassType": "",
-        "decant": "",
-        "ageability": "",
-        "pairings": ""
+        "pairings": ["risottos", "saffron", "porcini mushrooms", "pork", "Amatriciana", "Carbonara", "lasagna", "gnocchi", "gorgonzola", "walnuts", "grilled meat", "roasts"]
     },
     {
         "name": "Alois Lageader Riff Pinot Grigio",
         "pronunciation": "A-low-ees La-Gay-der",
-        "summary": " Brilliant straw-yellow color with a green tint. Fine, fruity (apples, peaches), forward varietal aromas. Pronounced, clean, elegant, grapey flavor. Light to medium-bodied with a fresh mouth-watering finish. Dry and crisp.",
+        "summary": "Brilliant straw-yellow color with a green tint. Fine, fruity (apples, peaches), forward varietal aromas. Pronounced, clean, elegant, grapey flavor. Light to medium-bodied with a fresh mouth-watering finish. Dry and crisp.",
         "producer": "Alois Lagedar",
-        "varietal": "100% Pinot Grigio",
+        "primaryFlavors": ["green apple", "citrus fruit"],
+        "varietal": ["100% Pinot Grigio"],
         "color": "white",
         "region": "Veneto, Trentino-Alto Adige, Italy",
-        "pairings": " As an aperitif, salads, starters (fish, meat or vegetables), pâtés and terrines, fish and shellfish, pasta, risotto, poultry, white meat and mushrooms",
+        "pairings": ["salads", "fish", "shellfish", "pasta", "risotto", "poultry", "white meat", "mushrooms"],
         "winery": "Alois Lageder is a synonym for the highest standard of quality in viticulture and winemaking, for a sustainable, holistic corporate philosophy, and for a wide spectrum of cultural and artistic activities. Founded in 1823, and now directed by Alois Lageder, representing the fifth generation of family ownership, the winery combines tradition and innovation.",
         "history": "Ah Pinot Grigio, a zesty white wine that is as refreshing as a cold glass of lemonade on a hot summer’s day. The second most popular white wine in America, Pinot Grigio (aka Pinot Gris) is a dry white wine that has a punchy acidity. Thought to be a mutation of the red grape Pinot Noir, Pinot Gris’ skins are not green like other white grapes, but instead have a greyish blue hue, which is what gives them their name. The wine was born in Burgundy (France) but found its way to Switzerland in the 1300s, where it was considered a favorite of the Emperor. From here the grape made its way to northern Italy, and the real story of Pinot Grigio was born. In Italy, Pinot Gris became Pinot Grigio and the wine found wide success in the regions of Northeastern Italy: Lombardy, the Veneto, Friuli, Trentino and Alto Adige. From its footing in northern Italy, the wine grew to become the most popular white wine in all of Italy, and then the most popular imported white wine in the U.S."
     },
@@ -737,34 +748,38 @@ var wineSeed = [
         "name": "Cantine Povero –Roero Arneis",
         "summary": "This wine is straw white in colour with greenish reflections. It has an intense and fresh fragrance, with a dry and delicate flavour. Its main notes, which may depend on the year, are fresh hay, pippin apple, almond and pineapple.",
         "producer": "Cantine Povero",
-        "varietal": "100% Arneis",
+        "primaryFlavors": ["melon", "almond"],
+        "varietal": ["100% Arneis"],
         "color": "white",
         "region": "Roero Piedmont, Italy",
-        "pairings": "Caramelized Onions – Bianca, Tutta Bella, Leonardo. Creamy dishes – Cauliflower w/ fennel pizza, Spaghetti Carbonara",
+        "pairings": ["caramelized onions", "Cauliflower", "Carbonara"],
         "winery": "Tenuta Fratelli Povero owns the 'Terre del Conte' vineyard from which they obtain all the fruit necessary for the production of their Roero Arneis, a wine that now ranks among the great D.O.C.G. whites of the Italian oenological tradition. 6th generation producers, these “stewards of the earth” use little interference in the wine making process, and wines represent their truest expression of the varietal, at the will of the earth.",
         "history": "Often referred to as the “white nebbiolo“, it is most commonly found in the hills of the Roero, northwest of Alba, growing in the heart of red wine country, alongside Nebbiolo and Barbara. It is for that reason that it almost went dinosaur on us. When you have to compete for growing space with some of the heaviest hitters in all of Italian wines, and are challenging to grow, it’s a hard battle to win. Arneis owes its existence, in part, from the efforts of one winemaker, Alfredo Currado of the Vietti family, who brought it back from scarcity. Known in Piemonte to mean “little rascal“, Arneis is regarded as a somewhat difficult variety to grow but was once used to blend with Nebbiolo as a way of softening its tannic nature. Thanks to the revitalization, the grape went from 2 producers in the 1970s to multiple producers making more than 1 million gallons of the stuff today."
     },
     {
         "name": "”Fondo Malatesta” Lambrusco Sorbara",
         "pronunciation": "key-are-lee , lamb-brew-skoh, soar-bar-aw",
+        "primaryFlavors": ["raspberry", "strawberry", "violets", "roses"],
         "summary": "Think bright acidity and mouth scrubbing for a dynamic spread of foods. Lambrusco Sorbara is also known locally as “Lambrusco Violletta” because the wine always smells of violets.",
         "producer": "Chiarli",
-        "varietal": "100% Lambrusco Sorbara",
+        "varietal": ["100% Lambrusco Sorbara"],
         "color": "red",
-        "sparkling": true,
+        "sparkling": "sparkling",
         "region": "Emilia Romagna, Italy",
-        "history": "A family of grapes is a term used to identify grapes that are similarly named and for the most part related. More specifically speaking there is not a Lambrusco, instead many specific lambruscos, all different in what they bring to the table as far as characteristics and flavor."
+        "history": "A family of grapes is a term used to identify grapes that are similarly named and for the most part related. More specifically speaking there is not a Lambrusco, instead many specific lambruscos, all different in what they bring to the table as far as characteristics and flavor.",
+        "pairings": ["goose", "duck", "sardines", "tuna"]
     },
     {
         "name": "Corteaura Franciacorta",
         "pronunciation": "core-tee-are-a, french-a-core-tah",
+        "primaryFlavors": ["white figs", "citrus fruit"],
         "summary": "The bright straw yellow color in the glass and a floral bouquet offer an intoxicating introduction. A combination of low yields, a rich creamy texture balanced with dried white fig, elegant citrus fruits, and fine bubbles.",
         "producer": "Corteaura",
-        "varietal": "100% Chardonnay",
+        "varietal": ["100% Chardonnay"],
         "color:": "white",
-        "sparkling": true,
+        "sparkling": "sparkling",
         "region": "Lombardy, Italy",
-        "pairings": "reat as an aperitif it also pairs with a wide variety of dishes such as charcuterie, shellfish, pork, chicken, and anything from the sea either raw or cooked",
+        "pairings": ["charcuterie", "shellfish", "pork", "chicken"],
         "history": "Franciacorta is producing using the ​traditional method​ ​where secondary fermentation takes place in the individual bottles. Also known as ​méthode champagneoise​ since it’s the method Champagnes must adhere to. It’s more costly and laborious than the tank method since each bottle needs to be turned regularly."
     },
     {
@@ -772,22 +787,24 @@ var wineSeed = [
         "pronunciation": "Key-ahn-tea class-ih-koh",
         "summary": "Well-integrated and balanced minerality, with developed tannins. On the palate, aromas of red fruits, including cherries. Bodied wine, with a pleasant, long finish. Excellent drinkability.",
         "producer": "Dievole Tuscana",
-        "varietal": "90% Sangiovese, 7% Canaiolo, 3% Colorino",
+        "primaryFlavors": ["dried violets", "ripe cherry"],
+        "varietal": ["90% Sangiovese", "7% Canaiolo", "3% Colorino"],
         "color": "red",
         "region": "Tuscany, Italy",
-        "pairings": "Bolognese, Gnocchi braised beef, Lasagna, red sauces",
+        "pairings": ["bolognese", "braised beef", "lasagna", "red sauces"],
         "winery": "Dievole, which means “Gods Will” have been producing wines since 1090. Their Chianti features classic fermentation, in large cement casks before spending 2 years in large barriques. Producing at the will of the land, there is little interference with the classic expression of the wines.",
         "history": "Chianti is easily the more recognized wine outside of Italy. It is as essential to Italian cuisine as olive oil, and synonymous with the region of Tuscany, in which the subregion of Chianti lies. Chianti will always have a base of Sangiovese, which gives it it’s firm tannin and high acidity. Within Chianti, there are eight subzones that classify the wines produced there, including Chianti Classico. The Chianti Classico is central to the region and arguably the most famous. In 1996 it was awarded DOCG(Denominazione di Origine Controllata e Garantita) status, in an effort to raise its perceived quality."
     },
     {
         "name": "La Bella Prosecco",
-        "pronunciation": " pro-sek-koh",
+        "pronunciation": "pro-sek-koh",
         "summary": "Crisp and fruity, notes of green apple and ripe peaches",
-        "producer": "",
-        "varietal": "100% Glera",
+        "primaryFlavors": ["green apple", "peach"],
+        "varietal": ["100% Glera"],
         "color": "white",
-        "sparkling": true,
+        "sparkling": "This wine is sparkling.",
         "region": "Friuli-Venezia Giulia, Italy",
+        "pairings": ["test", "no data"],
         "history": "Prosecco – the quintessential bubble of Italy! Prosecco is a sparkling white wine from north-eastern Italy, specifically the Veneto and Friuli-Venezia Giulia wine regions. It is also the informal name for the grape variety used to make these wines, which is now known officially as Glera. This green-skinned variety has been grown for hundreds of years in the Veneto and Friuli regions, most famously to produce sparkling Prosecco wines. La Bella brings a bright, fruit forward prosecco perfect on its own or in a cocktail."
     },
     {
@@ -795,9 +812,10 @@ var wineSeed = [
         "pronunciation": "Mohn-TEE-poll-CHAH-no, dah-BROOT-soh",
         "summary": "Deep ruby colour, with purple shadows. The bouquet shows rose, delicate red fruits similar to currant and raspberry, pepper, clove and accents of brush. Medium- bodied, in the mouth is velvety, with hints of plum, blueberry and licorice, with fresh and energetic tannins.",
         "producer": "La Valentina",
-        "varietal": "100% Montepulciano",
+        "primaryFlavors": ["rose", "currant", "blueberry"],
+        "varietal": ["100% Montepulciano"],
         "region": "Abruzzo",
-        "pairings": "Lasagne, lamb meat and medium-aged cheese.",
+        "pairings": ["lasagne", "lamb meat", "medium-aged cheese"],
         "winery": "After the first few years spent studying the Santa Teresa vineyard, their continuous efforts to keep improving quality and to achieve recognition for the high-quality D.O.C. wines from the Abruzzo region have become the principal goals in the company philosophy. We have learned to understand our land more fully by respecting and tending it. Each year we have had successively healthier wines of more and more authentic quality. Moved by our conviction that improvement comes only through respect for natural equilibriums, year on year we have rigorously applied our philosophy that does not permit the unrestrained use of technology and chemicals. We have decided to intervene as little as possible in what are natural processes, adhering to the concept that high-quality D.O.C. wine “has the mark of the vine on its grapes.” Convinced that a fine wine is born from the sum of so many small details, our objective must not only be to always produce fine wine, but also to make sure that our wines are always authentic.",
         "history": "The Montepulciano grape is quite prolific. The Montepulciano grape grows easily in Abruzzo. It is plump with high amounts of juice. Unlike most other varietals, this grape makes nice wine even when produced in large quantities. The grape has a deep purple and ruby color to its juice. It has lower acidity (especially for an Italian varietal) and mild sweeter tannins. The resulting wines tend to be softer and more accessible than Chianti or Nebbiolo for example. Accordingly, the young wines are nice pleasurable reds that go as well with food as without it. Heading due east from Rome lays the region of Abruzzo. This is a historically poor region whose people inhabit the hills and mountains so prevalent in the province. The hillsides are excellent for viticulture. La Valentina Farm was born on the hills overlooking Spoltore, which is near Pescara in Central Italy, in 1990. The owners, Sabatino, Roberto e Andrea Di Properzio, have been running the company since putting their development project into action in 1994."
     },
@@ -806,10 +824,11 @@ var wineSeed = [
         "pronunciation": "alli-yawn-nico",
         "summary": "Full body, ripe cherry and dried rose aromas, spicy notes of cocoa and tobacco, firm tannins",
         "producer": "Molettieri Irpinia",
-        "varietal": "100% Aglianico",
+        "primaryFlavors": ["ripe cherry", "dried roses", "cocoa", "tobacco"],
+        "varietal": ["100% Aglianico"],
         "color": "red",
         "region": "Campania",
-        "pairings": "gamey dishes – Braised Beef with Gnocchi, Lasagna, Bolognese, Pietro, pecorino cheese",
+        "pairings": ["braised beef", "lasagna", "bolognese", "pecorino cheese"],
         "winery": "The Azienda Vitivinicola Salvatore Molettieri was established in 1983, but viticulture and wine making have been a tradition of the family for four generations. The vineyards of the estate stand on the hills of Montemarano, one of the seventeen small towns which are part of the Taurasi DOCG appellation. This area is surrounded by mountains which offer protection against winds and hail. It is one of the best areas for the Aglianico grape variety to thrive.",
         "history": "Aglianico is a full-bodied red wine which is found almost exclusively in Southern Italy in the regions of Campania and Basilicata. Within these areas there are three production zones that have the highest tier Italian wine classification (DOCG). Each region has a decidedly different expression of the wine, but the volcanic soils are what ties them all together. Young Aglianico wines are known for strikingly savory flavors of leather, white pepper, black fruits and cured meat that when aged, develop soft dusty aromas of dried figs and sun-tanned leather."
     },
@@ -818,9 +837,10 @@ var wineSeed = [
         "pronunciation": "ree-gaul-lee-all-lee",
         "summary": "Bright ruby-red color, this wine offers layered notes of cherry, mulberry and raspberry. On the palate, it is complex and supple, with ripe berries flavors framed by silky tannins.",
         "producer": "Tasca Regaleali",
-        "varietal": "100% Nero D’Avola",
+        "primaryFlavors": ["ripe berry"],
+        "varietal": ["100% Nero D’Avola"],
         "region": "Sicily, Italy",
-        "pairings": "The right choice for eggplant parmigiana, pasta with meat sauce, meatballs, sausages, pizza and roasted meats",
+        "pairings": ["eggplant", "meat sauce", "meatballs", "sausages", "roasted meats"],
         "winery": "Regaleali is a vast Sicilian estate owned by the noble Tasca d'Almerita family since 1837 and best-known for its fine wines. Sicily's viticultural roots are some of the world's most ancient as the area supported vines as far back as five centuries before Christ. The Tasca D'Almerita family runs a model estate that yields approximately 200,000 cases annually.",
         "history": "The name translates to “Black [grape] of Avola,” referring to the town in Sicily where it was first identified. It’s been grown and produced for centuries. But besides local consumption, it was not widely known outside of Italy for a long time, as it was mostly exported to France to bulk out lighter red wines (they call it “le vin medicine”). It was largely ignored in the 1980’s, but has recently made a big comeback in worthy varietal releases, and is now considered the main local red grape of Sicily."
     },
@@ -828,7 +848,8 @@ var wineSeed = [
         "name": "Santi Chiaretto",
         "pronunciation": "key-a-ret-oh",
         "summary": "bright aromatic notes of wild cherries and strawberries, creamy texture, refreshing acidity",
-        "varietal": "65% Corvina, 30% Rondinella, 5% Molinara",
+        "varietal": ["65% Corvina", "30% Rondinella", "5% Molinara"],
+        "primaryFlavors": ["test", "no data"],
         "color": "rosè",
         "region": "Bardolino, Italy",
         "pairings": "Salads, pasta dishes, proscuttio – Proscuitto y Rucola, Proscuitto y Funghi",
@@ -840,9 +861,10 @@ var wineSeed = [
         "pronunciation": "Suav-vee-ah",
         "summary": "On the palate it is dry, medium-bodied and smooth notes of white flowers, yellow apples, pear and a refreshing lemony zing with a pleasant long mineral finish and almond note.",
         "producer": "Suavia",
-        "varietal": "100% Garganega",
+        "primaryFlavors": ["flower", "fruit"],
+        "varietal": ["100% Garganega"],
         "region": "Veneto, Italy",
-        "pairing": "",
+        "pairing": ["no data", "test"],
         "winery": "Our family, the Tessari family, has lived and worked on this land since the nineteenth century. The history of Suavia however began later, in 1982, when Giovanni and Rosetta (the father and mother), aware of the great potential of their area, decided to set up on their own and make their mark, crushing their grapes and making their own wine. The history of Suavia consists of a castle, no frog, few princes and lots of princesses. The castle is the one in Soave: a heritage from the Middle Ages, when the town was still called by the old name of Suavia; Giovanni and Rosetta’s four daughters, however, have been the main female characters in this story since the start of the twenty-first century. Today Meri, Valentina and I (Alessandra) run the winery here in Fittà, where it all started.",
         "history": "Soave is one of Italy’s most exported white wines and also one of Italy’s most important wines. Soave is Italian for “Suave“, and although many believe that the name is related to the often sleek and smooth characteristics of the wine, it actually comes the name of the Village of Soave, few kilometers East of Verona along the motorway heading to Venice, where it is produced. Garganega is the main grape varietal in Soave, DOC regulations requires 85% of the grape to be used. Wines made with Soave are some of the oldest documented in Italy, dating back to 500 B.C."
     },
@@ -851,10 +873,11 @@ var wineSeed = [
         "pronunciation": "Etna Rosa",
         "summary": "Light body, generous aromas of ripe raspberries and cranberry, black pepper and smoke, fine tannins",
         "producer": "Sciaranova and Piano Dario contradas",
-        "varietal": " 100% Norella Mascalese",
+        "primaryFlavors": ["raspberry", "cranberry", "black pepper", "smoke"],
+        "varietal": ["100% Norella Mascalese"],
         "color": "red",
         "region": "Sicily, Italy",
-        "pairings": "Roasted tomatoe, pepper flavors, light meats, oregano, thyme – Leonardo, Bianca, Saute Vongole",
+        "pairings": ["roasted tomato", "pepper", "light meats", "oregano", "thyme"],
         "winery": "Mount Etna is the highest and most active volcano in Europe. Growing over the past 500,000 years and in the midst of a series of eruptions, dating as recently as December 2018. Each year, it produces enough lava to fill a 108-story skyscraper and erupts in some form almost daily. This daily activity is what allows the surrounding area to fill with nutrient rich and ever changing soil, which has sparked a huge influx in agriculture over the past decade. Etna in comparison to most of Italy, is a fairly new wine producing region but this is what makes wine from this region so magical.",
         "history": "Norello Mascalese, the main grape produced, is one of the most important indigenous volcanic grapes in the world. One of the few varietals that rivals a style similar to a Pinot Noir. Due to the nutrient rich soil of the area, you will find distinctive notes of smoky volcanic aroma, complimented with bright fruity-flower flavors such as dried cherry and tart cranberries, orange zest, and thyme. Tascante Ghiana Nera Etna Rosso is a classical wine that fully expresses its extraordinary terroir with unique sharpness."
     },
@@ -863,9 +886,10 @@ var wineSeed = [
         "pronunciation": "Ten new tay, Mar more el lay",
         "summary": "Medium body, ethereal notes of cherry, black currants and ripened blackberry; hints of nutmeg and cocoa, well balanced",
         "producer": "Tenute Rubino",
-        "varietal": "85% Negroamaro and 15% Melvasia Nera",
+        "primaryFlavors": ["cherry", "black currant", "ripe blackberry", "nutmeg", "cocoa"],
+        "varietal": ["85% Negroamaro", "15% Melvasia Nera"],
         "region": "Puglia, Italy",
-        "pairings": "Caramelized Onions – Bianca, Tutta Bella, Leonardo",
+        "pairings": ["Caramelized Onions", "Bianca", "Tutta Bella", "Leonardo"],
         "winery": "Well-suited to the production of concentrated, fruity and spicy red varieties, Puglia is one of Italy’s warmest, most southerly regions. The eastern side is one long coastline bordering the Adriatic Sea, where half way down, the region becomes the Salento Peninsula. This peninsula, bordered by water on three sides, receives moist, nighttime, sea breezes that bring a welcome cooling effect to the region, and some much needed relief to the vines. Puglia, named for the Italian expression, “a pluvia,” meaning “lack of rain” becomes a challenging environment for vines to thrive.",
         "history": "Though, indigenous Primitivo, Negroamaro and Nero di Troia, all thrive in this dry climate. Negroamaro, typically blended with Malvasia nera, plays a large part in may blends made throughout the peninsula. The grape can produce wines very deep in color, as well as in taste. Wines made from Negroamaro tend to be very rustic in character, combining perfume with an earthy bitterness. This wine is a perfect fan favorite and easy drinking addition to any meal."
     },
@@ -874,11 +898,29 @@ var wineSeed = [
         "pronunciation": "​tear-adore-ah d paul-oh , fal-in-geen-ah",
         "summary": "straw-yellow colour with greenish reflections. Intense and aromatic nose of green apple, pineapple and citrus. Fresh on the palate, well- balanced with a crispy acidity and a lovely, long finish",
         "producer": "Terredora Di Paolo",
-        "varietal": "100% Falanghina",
+        "primaryFlavors": ["pineapple", "pear"],
+        "varietal": ["100% Falanghina"],
         "region": "Campania",
-        "pairings": "​suitable to drink with every meal; first course, soups, fish dishes, cold dishes, buffalo mozzarella and fresh cheeses.",
+        "pairings": ["​soups", "fish", "buffalo mozzarella", "fresh cheeses"],
         "winery": "Terredora Di Paolo is a story of a family that is closely linked to Campania, its land, its history and its people for generations. With 494 acres of privately owned vineyards in the best sites of the Avellino province, Terredora di Paolo is one of the largest wineries in southern Italy. In Irpinian, the wines exhibit a distinctive personality due to its unique microclimate. The altitude at which the vineyards are found, the soil and the thermal fluctuations develop wines that are intense and elegant and display complex bouquets. Since its establishment in 1978, Terredora di Paolo has focused on rediscovering and restoring Campania’s ancient and native varietals such as Aglianico, Fiano, Greco and Falanghina. These varietals are key players that have brought about Campania’s wine renaissance.",
         "history": "Falanghina is a white-wine grape most likely originating in the Campania region of Italy, which is still its home (though some think it may trace it all the way back to Greece) Falanghina makes wines of substantial body and some richness. It is not notably mineral or fruit-forward; rather, it is a soft, pleasing blend of floral and honeyed (but not sweet) flavors. The flavors and acidity are, in well-made specimens, elegantly balanced. It is interesting that some descriptions have it as a notably high-acid wine, while other reviewers describe it as soft and moderate to low in acid; presumably those are simply the results of different vinification methods. Fun Fact: Falanghina may have been one of the grapes used in the renowned wine of ancient Rome, Falernian."
+    },
+    {
+        "name": "",
+        "pronunciation": "",
+        "summary": "",
+        "primaryFlavors": [],
+        "sweetness": "",
+        "body": "",
+        "varietal": ["no data"],
+        "tannin": "",
+        "acidity": "",
+        "alcohol": "",
+        "temp": "",
+        "glassType": "",
+        "decant": "",
+        "ageability": "",
+        "pairings": ""
     }
 ];
 

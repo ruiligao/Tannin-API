@@ -11,7 +11,7 @@ router.route("/")
 
 router.route("/wineseed")
     .get(function(req, res){
-        db.MasterWineList.remove({})
+        db.MasterWineList.collection.deleteMany({})
         .then(() => db.MasterWineList.collection.insertMany(wineSeed))
         .then(data => {
         res.send('Wine successfully Seeded!')

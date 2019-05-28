@@ -18,7 +18,7 @@ var MasterWineListSchema = new Schema({
         type: String
     },
     varietal: {
-        type: String
+        type: Array
     },
     color: {
         type: String
@@ -57,7 +57,7 @@ var MasterWineListSchema = new Schema({
         type: String
     },
     pairings: {
-        type: String
+        type: Array
     },
     winery: {
         type: String
