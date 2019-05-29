@@ -4,6 +4,7 @@ const Employee = require('../models/Employees')
 const Restaurant = require('../models/Restaurants')
 const passport = require('../passport')
 const db = require("../models");
+const transporter = require('../nodemailer/');
 
 module.exports = {
 	getUser: function (req, res, next) {
@@ -54,7 +55,23 @@ module.exports = {
 						restaurantName: saveRestaurant.name,
 						restaurantId: saveRestaurant._id,
 						isAdmin: true
-					}).then(newEmployee => res.json(newEmployee))
+					}).then(newEmployee => {
+						var mailOptions = {
+							from: "uoautomailer.gmail.com",
+							to: newEmployee.email,
+							subject: "New Tannin Credentials for " + newEmployee.restaurantName,
+							text: "Hello " + newEmployee.firstName + ", " + "you have been given admin access to the Tannin account for " + newEmployee.restaurantName + ". Log in with this email address and the password you set when registering ("+ password +"). At this time, there is no way to update a password, so please keep this safe. -Tannin Technical Team"
+						  };
+				
+						  transporter.sendMail(mailOptions, function (error, info) {
+							console.log(mailOptions);
+						  if (error) {
+							console.log(error);
+						  } else {
+							console.log('Email sent: ' + info.response);
+						  };
+						});
+						res.json(newEmployee)})
 						.catch(err => res.status(422).json(err));
 					// return res.json(saveRestaurant)
 				})
