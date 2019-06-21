@@ -7,17 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  // "repository": {
-  //   "type": "git",
-  //   "url": "git+https://github.com/leifaesoph/Tannin-API.git"
-  // },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruiligao/Tannin-API.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  // "bugs": {
-  //   "url": "https://github.com/leifaesoph/Tannin-API/issues"
-  // },
-  // "homepage": "https://github.com/leifaesoph/Tannin-API#readme",
+  "bugs": {
+    "url": "https://github.com/ruiligao/Tannin-API/issues"
+  },
+  "homepage": "https://github.com/ruiligao/Tannin-API#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-mongo": "^2.0.3",
